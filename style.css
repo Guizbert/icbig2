@@ -1,0 +1,83 @@
+body
+{
+    background-color: gray;
+    font-family:'Segoe UI', Tahoma,  Verdana, sans-serif;
+
+
+}
+
+.cookies
+{
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px 14px;
+    display:flex;
+    background-color: rgba(0, 119, 255, 1);
+    border-radius: 5px;
+    justify-content: space-between;
+    font-size: 1.15em;
+    color: white;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.89);
+    transition: 600ms;
+}
+
+.cookies.active {
+    top: 0;
+}
+
+header .croix
+{
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    float: right;
+}
+
+header .topsite
+{
+    display: flex;
+}
+
+
+
+main
+{
+    background-color: white;
+}
+
+main .cotegauche
+{
+    float: left;
+}
+main .cotegauche h1
+{
+    background-color: rgb(166, 231, 226);
+    color: rgb(12, 119, 241);
+    top:auto;
+    padding: 2;
+    margin: 0;
+    font-size: 1.15em;
+}
+
+
+.cotegauche .menus .m1, .m2, .m3, .m4, .m5, .m6, .m7
+{
+    border-bottom:solid 0.5px;
+}
+
+
+.cotedroit h3{
+    background-color: rgba(255, 166, 0, 0.945);
+    color: #fff;
+    top:auto;
+    padding: 2;
+    margin: 0;
+    font-size: 1.15em ;
+}
