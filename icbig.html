@@ -4,36 +4,44 @@
 <meta charset="utf-8">
 <meta name="author" content="A.Ravier">
 <link rel=stylesheet href="style.css" media="all">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="mobile.css" type="text/css" />
+
 
 <title>ICBIG- A crazy webpage</title>
 </head>
 <body>
+    <div id="cookies">
+        <p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les odalités décrites dans notre Charte Cookies.</p>
+        <button class="cookies-btn" type="button">X </button>
+    </div>
     <header>
-        <div class="cookies">
-            <p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les odalités décrites dans notre Charte Cookies.</p>
-            <button class="croix" type="button">X </button>
-            <script src="java.js"></script>
-        </div>
-        <div class="Topsite">
+        <script src="java.js"></script>
+        <div class="top">
             <div class="logo">
-                <img src="icbig\logo-icbig.png" alt="logo du site">
+                <img src="icbig\logo-icbig.png" alt="logo du site" style="width: 35%;">
             </div>
             <div class="pub">
-                <img src="icbig\pub.JPG" alt="pub">
+                <img src="icbig\pub.JPG" alt="pub" style="width: 95%;">
             </div>
         </div>
        <div class="buttons">
             <button class="styled"
                 type="button">
-            <p>home</p>
+                <a href="#">
+                    home
+                </a>
             </button>
             <button class="styled"
                 type="button">
-            <p>dowload Now</p>
+                <a href="#">
+                    dowload Now
+                </a>
             </button>
             <button class="styled"
                 type="button">
-            <p>FAQ</p>
+                <a href="#">
+                    FAQ
+                </a>
             </button>
         </div> 
 
@@ -44,49 +52,63 @@
     </header>
 
     <main>
-        <div class="cotegauche">
+        <div id="cotegauche">
             <div class="ctgries">
-                <h1>CATEGORIES</h1>
-                <div class="menus">
-                    <p class="m1">&#127916;Movies</p>
-                    <p class="m2">&#127925;Music </p>
-                    <p class="m3">&#127918;games</p>
-                    <ul>
-                        <li>: puzzles</li>
-                        <li>: cards</li>
-                        <li>: mazes</li>
-                    </ul>
-                    <p class="m4">&#128250;Shows</p>
-                    <p class="m5">&#128421;software</p>
-                    <p class="m6">&#128216;Ebook</p> 
+                <h1>CATEGORIES</h1>.
+                <nav>                
+                    <p><a href="#Movies">&#127916;Movies</a></p>
+                    <p><a href="#music">&#127925;Music</a></p>
+                        
+                    <button class="dropdown-btn">&#127918;games
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <p></p><a href="#puzzles">puzzles</a></p>
+                        <p></p><a href="#cards">cards</a></p>
+                        <p></p><a href="#mazes">Mazes</a></p>
+                    </div>
+                                    
+                    <p><a href="#shows">&#128250;Shows</a></p>
+                    <p><a href="#software">&#128421;software</a></p>
+                    <p><a href="#ebook">&#128216;Ebook</a> </p>
                     <br>
-                    <p class="m6">&#128206;FAQ</p> 
-                    <p class="m7"> <img src="icbig\icon_sign.png" alt="icon" width="2%"> sign up</p>
-                </div>
+                    <br>
+                    <p><a href="#FAQ">&#128206;FAQ</a> </p>
+                    <p><a href="#"> <img src="icbig\icon_sign.png" alt="icon" width="20"> sign up</a></p>
+                </nav>
             </div>
             <div class="Testimonials">
                 <h2>TESTIMONIALS</h2>
-                <p>"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"</p>
-                <p>Julie Detras,BE</p> <br>
-                <p>"Time for me to chose the best solutions to my problems! Thanks"</p>
-                <p>Mike Powell,UK</p>
+                <blockquote>
+                    "Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"
+                     <p class="author" style="float: right;"> Detras,BE</p>
+                 </blockquote><br>
+                 <blockquote>
+                     "Time for me to chose the best solutions to my problems! Thanks"
+                     <p class="author" style="float: right;"> Powell,UK</p>     
+                 </blockquote>
             </div>
         </div>
-        <div class="cotedroit">
+        <div id="cotedroit" style="width: 99%;">
             <h3>STATISTICS</h3>
             <div class="ariane"> 
-                <p><a href="https://www.gamesgames.com/" class="button"> games </p></a>
-                <p><a href="https://cardgames.io/" class="button"> cards</p></a>
-                <p> inscription </p>
+                <p><a href="https://www.gamesgames.com/" class="button"> games </a>
+                <a href="https://cardgames.io/" class="button"> cards</a>
+                 inscription </p>
             </div>
             <div class="formulaireInscription">
                 <form method="POST" action="#">
-                    <h4> <img src="icbig\keys.png" alt=""> Formulaire d'inscription</h4>
+                    <img src="icbig\keys.png" alt="h4img" class="imgh4">
+                    <h4>  Formulaire d'inscription</h4>
                     <p>Vous devez vous inscrire pour commencer à jouer. L'inscription est <b>rapide et gratuite.</b></p>
-                    <p>Vous êtes déjà membre? <a href=seco>Se connecter</p> </a>
-                    <input type="text" id="id" placeholder="identifiant">
-                    <input type="email" id="mail" placeholder="E-mail">
-                    <input type="email" class="mail" placeholder="confirmer e-mail">
+                    <p>Vous êtes déjà membre? <a href=seco>Se connecter </a></p> 
+                    <label for="identifiant"></label>
+                    <input type="text" id="id" placeholder="identifiant"> <br>
+                    <label for="email"></label>
+                    <input type="email" id="mail" placeholder="E-mail"><br>
+                    <label for="confirmationMail"></label>
+                    <input type="email" class="mail" placeholder="confirmer e-mail"><br>
+                    <label for="pssword"></label>
                     <input type="password" id="MDP" placeholder="Mot de passe">
                     <p class="DDN">date de naissance :<input type="date" name="Date de naissance" id="DDN"></p>
                     <label for="coutry"> pays :</label>
@@ -95,7 +117,13 @@
                         <option value="France">France</option>
                         <option value="autre">autre</option>
                     </select>
-                    <div class="Connection">
+                    <div class="sexe">
+                        <input type="radio" name="sexe" id="sexe-h">
+                        <label>Homme</label>
+                        <input type="radio" name="sexe" id="sexe-f">
+                        <label>Femme</label>
+                    </div>
+                    <div class="Connection" style="float: right;">
                         <div id="fb-root"></div>
                         <a>
                         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="YwmfB05w"></script>
@@ -109,14 +137,18 @@
                             <img src="icbig\twit-sign-in.png" alt="twitter">
                         </div>
                     </div>
+                    <div>
+                        <p><input type="checkbox" id="check">J'accepte les <a href="">Conditions d'utilisation </a> et la <a href=""> Politique de confidentialité</a> de ICBig.</p>
+                    </div>
+                    <div class="inscriptionlogo">
+                        <a href="#"><img src="icbig\signUpBtn.jpg" alt="btn"></a>
+                    </div>
                 </form>
             </div>
-            <div>
-                  <p><input type="checkbox" id="check">J'accepte les <a href="">Conditions d'utilisation </a> et la <a href=""> Politique de confidentialité</a> de ICBig.</p>
-            </div>
+           
             <div class="videoTableau">
-                <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GIW6vyIo3uY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video" style="float: left;">
+                <iframe  src="https://www.youtube.com/embed/GIW6vyIo3uY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="tableau">
                    <table>
@@ -127,7 +159,7 @@
                             <th>Score</th>
                         </thead>
                         <tbody>
-                            <div class="top3">
+                            <div id="top3">
                                 <tr>
                                     <td rowspan="3">Top 3</td>
                                     <td>1</td>
@@ -170,16 +202,20 @@
                     </table>
                 </div>    
             </div>
-            <div class="Hautpage">
-                <img src="icbig\top.png" alt="top">
-                <a href="#Topsite">Haut de page</a>
+            <div class="Hautpage" style="float: right;
+            font-size: 1.2em;">
+                <img src="icbig\top.png" alt="top" style="width: 10%;">
+                <a href="#">Haut de page</a>
             </div>
         </div>
     </main>
     <footer>
-        <p><a href="#"> HOME</a></p>
-        <p> <a href="#">DOWNLOAD NOW </a></p>
-        <p><a href="#">FAQ</a></p>
+    <p><a href="#"> HOME</a>
+        <a href="#">DOWNLOAD NOW </a>
+        <a href="#">FAQ</a>
+    </p>
+
+    <p class="small">The purchase of a membershipis not a licese to download copyrighted material. Please do your part and respect copyrights.</p>
     </footer>
    
 </body>

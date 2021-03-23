@@ -1,36 +1,30 @@
 body
 {
-    background-color: gray;
-    font-family:'Segoe UI', Tahoma,  Verdana, sans-serif;
-
-
+    background-color: #3D3B3E;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "cookies"
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    border-bottom: dashed 1 px;
 }
 
-.cookies
-{
-    position: fixed;
+/* #cookies {
     box-sizing: border-box;
-    top: 0;
+    top:0; 
     left: 0;
     right: 0;
-    width: 100%;
-    padding: 5px 14px;
-    display:flex;
-    background-color: rgba(0, 119, 255, 1);
-    border-radius: 5px;
+    background: #2f3640;
+    color: #f5f6fa;
+    display: flex;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+    text-align: center;
     justify-content: space-between;
-    font-size: 1.15em;
-    color: white;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.89);
-    transition: 600ms;
 }
-
-.cookies.active {
-    top: 0;
-}
-
-header .croix
-{
+  
+.cookies-btn {
     height: 20px;
     background-color: transparent;
     border: none;
@@ -38,46 +32,170 @@ header .croix
     cursor: pointer;
     font-size: 18px;
     float: right;
-}
+} */
 
-header .topsite
+#cookies
 {
-    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color:#2f3640 ;
+    color:white;
+    display:flex;
+    text-align:center;
+    justify-content:space-between;
 }
 
+.cookies-btn
+{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+    color: white;
+    height: 20%;
+}
+header .top
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
 
+.logo
+{
+    margin-right: ;
+}
+
+.buttons, .researchbar
+{
+    float: right;
+    margin-right:2%;
+}
+
+.researchbar
+{
+    margin-top:1%;
+    margin-left:90%;
+}
 
 main
 {
+    display: grid;
+    grid-template-columns:1fr 1fr  ;
+    background-color: #fff;
+    margin: 20px; ;
+    width: 100%;
+}
+
+h1
+{
+    background-color: rgb(0, 170, 192);
+    margin-top: 0;
+}
+
+h2
+{
+    background-color: rgb(0, 170, 192);
+}
+
+h3
+{
+    background-color:rgb(245, 100, 3) ;
+    margin-top: 0;
+    font-size: 32px;
+}
+
+
+
+.nav a, .dropdown-btn
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: black;
+  }
+  
+  .active {
     background-color: white;
+    color: black;
+  }
+  
+  .dropdown-container {
+      padding-left: 50px;
+  }
+  
+  .dropdown-container a:hover {
+      background-color: #bca60a;
+  }
+
+  .testimonials .author
+  {
+      float: right;
+  }
+
+  form
+  {
+      border: solid 1px;
+  }
+
+ 
+  h4
+  {
+      font-size: 25px;
+  }
+  .imgh4
+  {
+      float: left;
+      width: 10%;
+  }
+  .connection
+  {
+      margin-left:60% ;
+  }
+
+  .inscriptionlogo
+  {
+      border: none;
+      background-color: transparent;
+      width: 5%;
+  }
+
+
+  table, tr, td, th {
+    border: 1px solid black;
+    border-spacing: 0;
 }
 
-main .cotegauche
+.hautpage
 {
-    float: left;
+    float: right;
 }
-main .cotegauche h1
+
+footer
 {
-    background-color: rgb(166, 231, 226);
-    color: rgb(12, 119, 241);
-    top:auto;
-    padding: 2;
-    margin: 0;
-    font-size: 1.15em;
+    text-align: center;
+    color: white;
 }
 
-
-.cotegauche .menus .m1, .m2, .m3, .m4, .m5, .m6, .m7
+footer a
 {
-    border-bottom:solid 0.5px;
+    color: gray;
 }
 
-
-.cotedroit h3{
-    background-color: rgba(255, 166, 0, 0.945);
-    color: #fff;
-    top:auto;
-    padding: 2;
-    margin: 0;
-    font-size: 1.15em ;
+footer .small
+{
+    font-size: 0.75em;
+    color: rgb(114, 114, 114);
 }
